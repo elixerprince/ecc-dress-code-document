@@ -1,0 +1,77 @@
+/* VARIABLES */
+:root {
+  --main-font: apple-ui, system-ui, sans-serif;
+  --body-bg-color: lightgreen;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-image: linear-gradient(var(--body-bg-color), var(--body-bg-color)),
+    url("images/paper-texture.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  font-family: var(--main-font);
+  font-weight: semi-bold;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  /* RESET DEFAULTS */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+.logo {
+  width: 90%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY */
+.address {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.5rem 1rem;
+}
+
+/* TABLE STYLES */
+table,
+tr,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse; /* Collapse borders into a single border */
+  padding: 1rem;
+}
+
+table {
+  margin: 0 auto; /* Center the table */
+  max-width: 100%; /* Limit the width of the table */
+  width: 80rem;
+}
+
+table p {
+  margin-top: 0; /* Remove top margin from paragraphs in table cells */
+}
+
+td {
+  vertical-align: top; /* Align text to the top of the cell */
+}
